@@ -10,14 +10,14 @@
 
 
     <div class="container">
-      <h1>Update customer data</h1>
+      <h1>Update employee data</h1>
       <a href="{{route('home.emplist')}}">Back</a><a href="{{route('logout.index')}}">|Logout</a>
 
       <form method="post">
 
         <table border="1">
           <tr>
-            <td>customer name: </td>
+            <td>Employee name: </td>
             <td><input type="text" name="empName" value="{{$emp->empName}}"> </td>
 
           </tr>

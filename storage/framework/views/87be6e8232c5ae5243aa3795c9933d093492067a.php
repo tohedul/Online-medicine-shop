@@ -11,7 +11,7 @@
 
     <div class="container">
       <h1>Search Employee</h1>
-      <a href="{{route('home.admin')}}">Back</a><a href="{{route('logout.index')}}">|Logout</a>
+      <a href="<?php echo e(route('home.admin')); ?>">Back</a><a href="<?php echo e(route('logout.index')); ?>">|Logout</a>
 
         <form method="get">
           <div class="form-group">
@@ -31,14 +31,14 @@
             <th>Username</th>
             <th colspan="2">Actions</th>
           </tr>
-          @foreach($searchresults as $emp)
+          <?php $__currentLoopData = $searchresults; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $emp): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <tr>
-            <td>{{$emp->empName}}</td>
-            <td>{{$emp->contactNo}}</td>
-            <td>{{$emp->username}}</td>
-            <td><a href="{{route('home.update', [$emp->id])}}" class="btn">Update</a>|<a href="{{route('home.delete', [$emp->id])}}" class="btn">Delete</a> </td>
+            <td><?php echo e($emp->empName); ?></td>
+            <td><?php echo e($emp->contactNo); ?></td>
+            <td><?php echo e($emp->username); ?></td>
+            <td><a href="<?php echo e(route('home.update', [$emp->id])); ?>" class="btn">Update</a>|<a href="<?php echo e(route('home.delete', [$emp->id])); ?>" class="btn">Delete</a> </td>
           </tr>
-          @endforeach
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </table>
 
     </div>

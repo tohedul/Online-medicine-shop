@@ -11,7 +11,7 @@
 
     <div class="container">
       <h1>Home </h1>
-      <a href="{{route('home.emplist')}}">Employee List</a> | <a href="{{route('home.search')}}">Search Employee</a> | <a href="{{route('home.create')}}">Create account</a> | <a href="{{route('logout.index')}}">|Logout</a>
+      <a href="<?php echo e(route('home.emplist')); ?>">Employee List</a> | <a href="<?php echo e(route('home.search')); ?>">Search Employee</a> | <a href="<?php echo e(route('home.create')); ?>">Create account</a> | <a href="<?php echo e(route('logout.index')); ?>">|Logout</a>
     </div>
 
 

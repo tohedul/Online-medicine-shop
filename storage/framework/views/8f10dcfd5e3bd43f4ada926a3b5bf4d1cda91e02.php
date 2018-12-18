@@ -11,26 +11,27 @@
 	<div class="container" style="margin-top:5%;margin-left: 40%;text-align:center;">
 
 		<form method="post" >
-			{{ csrf_field() }}
+			<?php echo e(csrf_field()); ?>
+
 			<table >
 				<tr>
 					<td colspan="2"><h3>Login</h3><br> </td>
 				</tr>
 				<tr>
 					<td>Username: </td>
-					<td><input type="text" name="username" placeholder="Enter username" autofocus required></td>
+					<td><input type="text" name="username" autofocus required></td>
 				</tr>
 				<br><br>
 				<tr>
 					<td>Password: </td>
-					<td><input type="password" name="password" placeholder="Enter password" required></td>
+					<td><input type="password" name="password" required></td>
 				</tr>
 				<tr>
 					<td colspan="2"><input type="submit" name="submit" value="Login"></td>
-					<td></td>
 				</tr>
 
 			</table>
+
 
 		</form>
 	</div>

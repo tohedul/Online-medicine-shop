@@ -11,7 +11,7 @@
 
     <div class="container">
       <h1>Create Account </h1>
-      <a href="{{route('home.admin')}}">Back</a><a href="{{route('logout.index')}}">|Logout</a>
+      <a href="<?php echo e(route('home.admin')); ?>">Back</a><a href="<?php echo e(route('logout.index')); ?>">|Logout</a>
 
       <form method="post">
 

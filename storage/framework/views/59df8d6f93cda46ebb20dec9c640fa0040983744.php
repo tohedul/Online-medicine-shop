@@ -11,7 +11,8 @@
 	<div class="container" style="margin-top:5%;margin-left: 40%;text-align:center;">
 
 		<form method="post" >
-			{{ csrf_field() }}
+			<?php echo e(csrf_field()); ?>
+
 			<table >
 				<tr>
 					<td colspan="2"><h3>Login</h3><br> </td>

@@ -27,8 +27,9 @@
 				</tr>
 				<tr>
 					<td colspan="2"><input type="submit" name="submit" value="Login"></td>
-					<td></td>
+					<td>Not user?<a href="{{route('register.index')}}">Register</a></td>
 				</tr>
+
 
 			</table>
 

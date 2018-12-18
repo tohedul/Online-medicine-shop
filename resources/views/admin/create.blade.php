@@ -17,7 +17,7 @@
 
         <table border="1">
           <tr>
-            <td>Employee name: </td>
+            <td>customer name: </td>
             <td><input type="text" name="empName" value="" required> </td>
 
           </tr>

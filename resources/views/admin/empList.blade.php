@@ -10,7 +10,7 @@
 
 
     <div class="container">
-      <h1>Employee List </h1>
+      <h1>customer List </h1>
       <a href="{{route('home.admin')}}">Back</a><a href="{{route('logout.index')}}">|Logout</a>
 
       <form method="post">

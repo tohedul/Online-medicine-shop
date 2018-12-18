@@ -11,7 +11,13 @@
 
     <div class="container">
       <h1>Home </h1>
-      <a href="{{route('home.emplist')}}">Employee List</a> | <a href="{{route('home.search')}}">Search Employee</a> | <a href="{{route('home.create')}}">Create account</a> | <a href="{{route('logout.index')}}">|Logout</a>
+      <a href="{{route('home.emplist')}}">customer List</a> |
+       <a href="{{route('home.search')}}">Search customer</a> |
+        <a href="{{route('home.create')}}">Create account</a> 
+        |
+        <a href="{{route('home.productadmin')}}">Medicine List</a> |
+        <a href="{{route('home.newproduct')}}">New medicine</a> |
+         <a href="{{route('logout.index')}}">Logout</a>
     </div>
 
 
